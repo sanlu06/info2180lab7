@@ -1,11 +1,18 @@
 <?php
 // For PHP 5 and up
-/* $term = $_REQUEST['term'];
-$all = $_REQUEST['all'];
-$author = $_REQUEST['author'];
-$handle = fopen("https://webster.cs.washington.edu/cse154/labs/ajax/urban.php?term=$term&all=$all&author=$author", "rb");
-$contents = stream_get_contents($handle);
-print $contents;
-fclose($handle); */
-echo "hello I'm request.php";
+
+# accept a term (keyword)
+# respond with a value
+$query = $_REQUEST['q'];
+
+$naseberry = [
+    "definition" => "a statement of the exact meaning of a word, especially in a dictionary.",
+    "bar" => "a place that sells alcholic beverages",
+    "ajax" => "technique which involves the use of javascript and xml"
+];
+
+print $query;
+print "<br>";
+print($naseberry[$query]);
+
 ?>
