@@ -5,7 +5,7 @@
 # respond with a value
 $query = $_REQUEST['q'];
 
-$naseberry = [
+$definition = [
     "definition" => "a statement of the exact meaning of a word, especially in a dictionary.",
     "bar" => "a place that sells alcholic beverages",
     "ajax" => "technique which involves the use of javascript and xml"
@@ -13,6 +13,6 @@ $naseberry = [
 
 print $query;
 print "<br>";
-print($naseberry[$query]);
+print($definition[$query]);
 
 ?>
